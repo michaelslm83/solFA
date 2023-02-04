@@ -1,0 +1,7 @@
+import { Configuration, OpenAIApi } from "openai";
+const configuration = new Configuration({
+    organization: "org-V92EA9MikLLxQy0pkZzWTa36",
+    apiKey: "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",
+});
+const openai = new OpenAIApi(configuration);
+const response = await openai.listEngines();
